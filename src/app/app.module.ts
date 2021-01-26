@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { NavbarModule } from './@componets/navbar/navbar.module';
 import { HeaderModule } from './@componets/header/header.module';
 import { PortfolioModule } from './@componets/portfolio/portfolio.module';
@@ -9,20 +10,24 @@ import { AboutModule } from './@componets/about/about.module';
 import { ContactModule } from './@componets/contact/contact.module';
 import { FooterModule } from './@componets/footer/footer.module';
 import { CopyrightModule } from './@componets/copyright/copyright.module';
+import { ModalsModule } from '@widgets/modals/modals.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     NavbarModule,
+    BrowserAnimationsModule,
     HeaderModule,
     PortfolioModule,
     AboutModule,
     ContactModule,
     FooterModule,
-    CopyrightModule
+    CopyrightModule,
+    ModalsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

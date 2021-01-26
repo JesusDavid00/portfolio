@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortfolioComponent } from './portfolio.component';
 import { TitleModule } from 'src/app/@widgets/title/title.module';
+import { ModalsModule } from '@widgets/modals/modals.module';
 
 
 
@@ -9,7 +10,8 @@ import { TitleModule } from 'src/app/@widgets/title/title.module';
   declarations: [PortfolioComponent],
   imports: [
     CommonModule,
-    TitleModule
+    TitleModule,
+    ModalsModule
   ],
   exports:[PortfolioComponent]
 })
