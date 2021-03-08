@@ -29,9 +29,15 @@ export class ContactComponent implements OnInit {
 
   onSubmit(){
     let ContactDato = this.FormContact.value;
+    let paraEmail = "jesusblow.alvear@gmial.com"
+    console.log();
+
     let title = ContactDato ? "Enviado correctamente" : "Ha ocurrido un error";
     if(ContactDato){
       this.data = !this.data;
+      let email = "para: "+ paraEmail + " De: " +ContactDato.email  +" "+ ContactDato.name +" "+ ContactDato.telefono +" "+ ContactDato.message
+
+       alert(email)
       this.snak.open(title, "OK" , {duration: 5000});
     }else{
       this.snak.open(title, "OK" , {duration: 5000});
